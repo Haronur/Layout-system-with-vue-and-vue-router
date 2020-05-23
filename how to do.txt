@@ -23,3 +23,37 @@ npm install
 
 Step 5
 npm run dev
+
+##- Basic Routing with Vue.js -##
+
+Step 1: Install Vue Router
+npm install vue-router --save
+
+Step 2: Basic Routing with Vue.js
+Inside the src folder, create one Folder router and one file called index.js and add the following code.
+
+import Vue from 'vue';
+import Router from 'vue-router';
+
+import Home from '../components/Home.vue';
+import About from '../components/About.vue';
+
+Vue.use(Router);
+
+const router = new Router({
+	mode: 'history',
+    routes: [
+    { path: '/', component: Home },
+    { path: '/about', component: About, name: 'about' },
+    ]
+});
+
+export default router;
+
+
+Step 3: Create Vue components
+The next step is to create Two new components inside the src >> components folder.
+    Home.vue
+    About.vue
+
+Step 3: npm run dev
