@@ -57,3 +57,5 @@ The next step is to create Two new components inside the src >> components folde
     About.vue
 
 Step 3: npm run dev
+
+##- 03- Bootstrap Simple Template Integration -##
