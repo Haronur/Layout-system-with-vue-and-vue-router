@@ -7,7 +7,7 @@
       <div class="row content">
 
         <side-bar />      
-        <router-view />
+        <slot />
 
       </div>
 

@@ -61,3 +61,5 @@ Step 3: npm run dev
 ##- 03- Bootstrap Simple Template Integration -##
 
 ##- 04- Layout System Without `slot` -##
+
+##- 05- Layout System With Slot -##
