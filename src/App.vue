@@ -1,31 +1,28 @@
 <template>
   <div id="app">
-    
-    <nav-bar />
-    <hr>
-    <div class="container-fluid">
-      <div class="row content">
-
-        <side-bar />      
-        <router-view />
-
-      </div>
-
-      <footer-bar />
-    </div>
+    <component :is="layout">    
+    </component>
   </div>
 </template>
 
 <script>
-  import NavBar from "./components/partial/NavBar";
-  import SideBar from "./components/partial/SideBar";
-  import FooterBar from "./components/partial/FooterBar";
+  const default_layout = "default";
   export default {
-    components: {
-      NavBar,
-      SideBar,
-      FooterBar
+  computed: {
+    layout() {
+      return (this.$route.meta.layout || default_layout) + "-layout";
     }
+  },
+
+  created() {
+    // nothing defined here (when this.$route.path is other than "/")
+    console.log(this.$route, this.$route.meta.layout);
+  },
+
+  updated() {
+    // something defined here whatever the this.$route.path
+    console.log(this.$route, this.$route.meta.layout);
+  }
   }
 </script>
 

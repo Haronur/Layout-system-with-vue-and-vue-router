@@ -59,3 +59,5 @@ The next step is to create Two new components inside the src >> components folde
 Step 3: npm run dev
 
 ##- 03- Bootstrap Simple Template Integration -##
+
+##- 04- Layout System Without `slot` -##

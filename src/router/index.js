@@ -8,10 +8,19 @@ Vue.use(Router);
 
 const router = new Router({
 	mode: 'history',
-    routes: [
-    { path: '/', component: Home },
-    { path: '/about', component: About, name: 'about' },
-    ]
+	routes: [
+	{ 
+		path: '/',
+		component: Home
+	},
+	{ 
+		path: '/about',
+		component: About,
+		name: 'about',
+		
+		meta: { layout: "no-sidebar" },
+	},
+	]
 });
 
 export default router;
