@@ -5,7 +5,7 @@
     <hr>
     <div class="container-fluid">
       <div class="row content">     
-        <router-view />
+       <slot />
 
       </div>
 
